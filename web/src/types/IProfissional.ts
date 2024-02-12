@@ -1,7 +1,15 @@
+import IEndereco from "./IEndereco";
+
 export default interface IProfissional {
-    id: number,
-    imagem: string,
-    nome: string,
-    especialidade: string,
-    nota: number
+	name: string,
+	crm: string,
+	image: string,
+	specialty: string,
+	hasHealthPlan: boolean,
+	password: string,
+	healthPlan: string[],
+	isActive: boolean,
+	email: string,
+	phone: string,
+	address: IEndereco,
 }

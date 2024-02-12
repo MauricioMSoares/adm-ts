@@ -57,17 +57,17 @@ function Card({ profissional }: { profissional: IProfissional }) {
         <ContainerEstilizado>
             <ListaEstilizada>
                 <ItemEstilizado>
-                    <ImagemEstilizada src={profissional.imagem}
-                        alt={`Foto de perfil do profissional ${profissional.nome}`} />
+                    <ImagemEstilizada src={profissional.image}
+                        alt={`Foto de perfil do profissional ${profissional.name}`} />
                 </ItemEstilizado>
                 <ItemInformacoesEstilizado>
-                    <ParagrafoNomeEstilizado>{profissional.nome}</ParagrafoNomeEstilizado>
-                    <ParagrafoEstilizado>{profissional.especialidade}</ParagrafoEstilizado>
+                    <ParagrafoNomeEstilizado>{profissional.name}</ParagrafoNomeEstilizado>
+                    <ParagrafoEstilizado>{profissional.specialty}</ParagrafoEstilizado>
                 </ItemInformacoesEstilizado>
                 <ItemEstilizado>
                     <Rating
                         name="simple-controlled"
-                        value={profissional.nota}
+                        value={3}
                         readOnly={true}
                     />
                 </ItemEstilizado>
