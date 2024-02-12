@@ -4,12 +4,14 @@ import PaginaBase from './pages/PaginaBase';
 import PaginaBaseFormulario from './pages/PaginaBaseFormulario';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
+import PrivateRoute from './utils/PrivateRoute';
 
 function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<PaginaBase />}>
+          <Route element={<PrivateRoute />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Route>
         <Route path="/" element={<PaginaBaseFormulario />}>
